@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #f1f3ff;
+}
+
+
+
+.top-header{
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    font-size: 25px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+.new{ background: crimson; }
+.popular{ background: orange; }
+.sale{ background: purple; }
+
+.product-img{
+    width: 50%;
+    height: 60px;
+    object-fit: contain;
+}
+
+.title{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.description{
+    color: #555;
+    margin: 10px 0;
+}
+
+.price{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn{
+    background: royalblue;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: navy;
+}
+
+
+
+
+.comparison-box{
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    margin-bottom: 100px;
+}
+
+.table-heading{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background: #5270ff;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 12px;
+    text-align: center;
+}
+
+tr{
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
